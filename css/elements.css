@@ -1,0 +1,9 @@
+body {
+  background: var(--base00);
+  font-family: Hack, monospace;
+}
+
+ul {
+  display: block;
+  list-style-type: none;
+}

@@ -1,0 +1,21 @@
+@import 'colors.css';
+@import 'elements.css';
+@import 'box.css';
+
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.center p, .center span, .center h1 {
+  text-align: center;
+  display: block;
+}
+
+.step.present .animation-rotate {
+  display: inline-block;
+  transform: rotate(-5deg);
+  transition: 0.5s;
+  transition-delay: 0.25s;
+}
