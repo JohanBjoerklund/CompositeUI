@@ -86,40 +86,149 @@
                 </h1>
             </div>
 
+            <!--
+              Each service provides its own UI
+              The UI will act as the API, and can therefor not
+              not do network calls to other services than it's own.
+            -->
             <div id="how-1"
                  class="step box-small"
                  data-scale="4"
                  data-x="0"
-                 data-y="-3500">
+                 data-y="3500">
                  <p>Give up on the monolith.</p>
             </div>
+            <!--
+              Provide everything your component needs to work.
+              That includes CSS, UI frameworks etc
+            -->
+            <div id="how-2"
+                 class="step box-small"
+                 data-scale="4"
+                 data-x="0"
+                 data-y="3600">
+                 <p>Provide everything your components need.</p>
+            </div>
 
-            <!-- <div id="how-1" -->
-            <!--      class="step box center base09" -->
-            <!--      data-x="3200" -->
-            <!--      data-y="4000" -->
-            <!--      data-rotate-y="180"> -->
-            <!--   <ul> -->
-            <!--       <li>TODO: PUT IN TECH AREA</li> -->
-            <!--       <li>The stack</li> -->
-            <!--       <li>ASP.NET WebAPI</li> -->
-            <!--       <1!-- why ASP.NET WebAPI?: Familiar and slim --1> -->
-            <!--       <li>RiotJS</li> -->
-            <!--       <1!-- Why RiotJS?: Familiar and slim --1> -->
-            <!--       <li>Redux</li> -->
-            <!--       <1!-- Why Redux? Familiar and easy to get started with --1> -->
-            <!--       <li>Rollup</li> -->
-            <!--       <1!-- Why Rollup? Tree shaking, nice API --1> -->
-            <!--   </ul> -->
-            <!-- </div> -->
+            <div id="how-3"
+                 class="step box-small"
+                 data-scale="4"
+                 data-x="0"
+                 data-y="3700">
+                 <p>This inclueds markup, code, css etc.</p>
+            </div>
+
+            <div id="how-3"
+                 class="step box-small"
+                 data-scale="4"
+                 data-x="0"
+                 data-y="3800">
+                 <p>How do such a strucutre look like?</p>
+            </div>
+
+            <div id="how-4"
+                 class="step box-small"
+                 data-scale="4"
+                 data-rotate-x="90"
+                 data-x="0"
+                 data-y="-3700">
+                 <div class="grid-wrapper">
+                     <div class="row-1 column-2 base03">
+                         <i class="icon-display"></i>
+                     </div>
+                     <div class="row-2 column-2 base03">
+                         <i class="icon-embed2"></i>
+                         <span>.tag</span>
+                     </div>
+                     <div class="row-3 column-1 base03">
+                         <i class="icon-database"></i>
+                         <span>.json</span>
+                     </div>
+                     <div class="row-3 column-2 base03">
+                         <i class="icon-database"></i>
+                         <span>.json</span>
+                     </div>
+                     <div class="row-3 column-3 base03">
+                         <i class="icon-database"></i>
+                         <span>.json</span>
+                     </div>
+
+                     <div class="row-1 column-6">
+                         <i class="icon-display"></i>
+                     </div>
+                     <div class="row-2 column-5">
+                         <i class="icon-embed2"></i>
+                         <span>.tag</span>
+                     </div>
+                     <div class="row-2 column-6">
+                         <i class="icon-embed2"></i>
+                         <span>.tag</span>
+                     </div>
+                     <div class="row-2 column-7">
+                         <i class="icon-embed2"></i>
+                         <span>.tag</span>
+                     </div>
+                     <div class="row-3 column-5">
+                         <i class="icon-database"></i>
+                         <span>.json</span>
+                     </div>
+                     <div class="row-3 column-6">
+                         <i class="icon-database"></i>
+                         <span>.json</span>
+                     </div>
+                     <div class="row-3 column-7">
+                         <i class="icon-database"></i>
+                         <span>.json</span>
+                     </div>
+
+                 </div>
+            </div>
 
             <div id="hurdles-0"
                 class="step box center base0A"
                 data-x="1000"
                 data-y="0">
-                <h1>
+                <h1 class="animation-rotate">
                     The hurdles.
                 </h1>
+            </div>
+
+            <!--
+              We picked a small UX framework called riot.js at 9kb.
+              Much more to do, reuse components, mimimize CSS rules etc
+              Note: We actually noticed big difference when we removed a bunch
+              of CSS, which wasn't noticeable in Angular.
+            -->
+            <div id="hurdles-1"
+                 class="step box-small"
+                 data-scale="4"
+                 data-x="1000"
+                 data-y="1500">
+                <span>Keeping the bundle size down.</span>
+            </div>
+
+            <!--
+              Mediator pattern, custom events.
+            -->
+            <div id="hurdles-1"
+                 class="step box-small"
+                 data-scale="4"
+                 data-x="1000"
+                 data-y="1750">
+                <span>Communication between bundles.</span>
+            </div>
+
+            <!--
+              Bundles are loaded async, and only the mediator
+              knwos when all bundles are loaded.
+              Stack in the mediator.
+            -->
+            <div id="hurdles-1"
+                 class="step box-small"
+                 data-scale="4"
+                 data-x="1000"
+                 data-y="1625">
+                <span>Timeing.</span>
             </div>
 
             <div id="tech-0"
@@ -130,75 +239,8 @@
                     The stack.
                 </h1>
             </div>
-            <!-- <div class="step box center base0A" -->
-            <!--      data-x="0" -->
-            <!--      data-y="3000"> -->
-            <!--     <h1> -->
-            <!--         How <em>how</em> and <em>why</em> relate. -->
-            <!--     </h1> -->
-            <!-- </div> -->
 
-            <!-- <div class="step box center base0B" -->
-            <!--      data-x="0" -->
-            <!--      data-y="9000"> -->
-            <!--     <h1> -->
-            <!--         The <b class="animation-rotate"> hurdles</b>. -->
-            <!--     </h1> -->
-            <!-- </div> -->
-
-            <!-- <div class="step box" -->
-            <!--      data-x="0" -->
-            <!--      data-y="9000"> -->
-            <!--     <h1> -->
-            <!--       The stack. -->
-            <!--     </h1> -->
-            <!-- </div> -->
-
-            <!-- <div class="step box center" -->
-            <!--      data-x="0" -->
-            <!--      data-y="10000"> -->
-            <!--     <h1> -->
-            <!--       How it all works together. -->
-            <!--     </h1> -->
-            <!-- </div> -->
-
-            <!-- <div class="step box center" -->
-            <!--      data-x="0" -->
-            <!--      data-y="11000"> -->
-            <!--     <h1> -->
-            <!--       Why we made the decisions we did -->
-            <!--     </h1> -->
-            <!-- </div> -->
-
-            <!-- <div class="step box center" -->
-            <!--      data-x="0" -->
-            <!--      data-y="12000"> -->
-            <!--     <h1> -->
-            <!--       Everything in redux, small UI layer. -->
-            <!--       TODO: MOVE TO HOW -->
-            <!--     </h1> -->
-            <!-- </div> -->
-
-            <!-- <div class="step box" -->
-            <!--      data-x="0" -->
-            <!--      data-y="13000"> -->
-            <!--     <p> -->
-            <!--     Presentational components and container components, -->
-            <!--     why most are container components -->
-            <!--       TODO: MOVE TO 'How it all works together' -->
-            <!--     </p> -->
-            <!-- </div> -->
-
-            <!-- <div class="step box center" -->
-            <!--      data-x="0" -->
-            <!--      data-y="14000"> -->
-            <!--     <h1> -->
-            <!--       Questions? -->
-            <!--     </h1> -->
-            <!-- </div> -->
-          <div id="questions" class="step" data-scale="5">
-
-          </div>
+          <div id="questions" class="step" data-scale="5"></div>
         </div>
 
         <script type="text/javascript" src="js/impress.js/js/impress.js"></script>

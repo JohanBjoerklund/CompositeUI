@@ -1,6 +1,8 @@
 @import 'colors.css';
 @import 'elements.css';
 @import 'box.css';
+@import 'grid.css';
+@import 'fonts.css';
 
 .center {
   display: flex;
