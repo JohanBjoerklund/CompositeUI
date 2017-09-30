@@ -1,3 +1,9 @@
 [submodule "js/impress.js"]
 	path = js/impress.js
 	url = https://github.com/impress/impress.js.git
+[submodule "images/logo"]
+	path = images/logo
+	url = https://github.com/riot/logo.git
+[submodule "images/riot"]
+	path = images/riot
+	url = https://github.com/riot/logo.git
