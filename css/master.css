@@ -3,6 +3,7 @@
 @import 'box.css';
 @import 'grid.css';
 @import 'fonts.css';
+@import 'images.css';
 
 .center {
   display: flex;
