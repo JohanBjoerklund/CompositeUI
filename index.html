@@ -36,6 +36,11 @@
                 <span>Big bundle size.</span>
             </div>
 
+            <!--
+                Angular2, React etc too big.
+                PreAct Riot better fit.
+                Used Riot before.
+            -->
             <div id="why-1-1"
                  class="step box-small hidden"
                  data-scale="4"
@@ -45,6 +50,9 @@
                 <span class="base0C">[6/1.5 MB]</span>
             </div>
 
+            <!--
+                Kb instead of MB
+            -->
             <div id="why-2-0"
                  class="step box-small"
                  data-scale="4"
@@ -61,6 +69,11 @@
                 <p>Better experience on slow connections.</p>
             </div>
 
+            <!--
+                No need to build everythig at one.
+                Build each context on it's own.
+            -->
+            Have to be backwards compatible
             <div id="why-4-0"
                  class="step box-small"
                  data-scale="4"
@@ -69,6 +82,10 @@
                 <p>Long build time.</p>
             </div>
 
+            <!--
+                Work in a bounded context.
+                Less context switch.
+            -->
             <div id="why-5-0"
                  class="step box-small"
                  data-scale="4"
@@ -100,7 +117,7 @@
             </div>
             <!--
               Provide everything your component needs to work.
-              That includes CSS, UI frameworks etc
+              That includes CSS, UI frameworks etc.
             -->
             <div id="how-2"
                  class="step box-small"
@@ -110,6 +127,10 @@
                  <p>Provide everything your components need.</p>
             </div>
 
+            <!--
+                Markup and CSS is the big part of the bundles.
+                Used to not make a dent.
+            -->
             <div id="how-3"
                  class="step box-small"
                  data-scale="4"
@@ -196,8 +217,11 @@
             <!--
               We picked a small UX framework called riot.js at 9kb.
               Much more to do, reuse components, mimimize CSS rules etc
+
               Note: We actually noticed big difference when we removed a bunch
               of CSS, which wasn't noticeable in Angular.
+
+              Each bundle is translated.
             -->
             <div id="hurdles-1"
                  class="step box-small"
@@ -209,6 +233,7 @@
 
             <!--
               Mediator pattern, custom events.
+              Has to be backwards compatible, each bundle can be released at any time.
             -->
             <div id="hurdles-1"
                  class="step box-small"
@@ -220,7 +245,8 @@
 
             <!--
               Bundles are loaded async, and only the mediator
-              knwos when all bundles are loaded.
+              knows when all bundles are loaded.
+
               Stack in the mediator.
             -->
             <div id="hurdles-1"
